@@ -1,0 +1,28 @@
+<h1>Show Petition</h1>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @petition.title %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @petition.description %>
+  </li>
+
+  <li>
+    <strong>Goal:</strong>
+    <%= @petition.goal %>
+  </li>
+
+  <li>
+    <strong>Due date:</strong>
+    <%= @petition.due_date %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.petition_path(@conn, :edit, @petition) %></span>
+<span><%= link "Back", to: Routes.petition_path(@conn, :index) %></span>
